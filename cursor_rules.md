@@ -1,0 +1,7 @@
+1. **Embrace Iterative Development:** Start with the simplest viable solution and incrementally build complexity. Be prepared to refactor or change approaches (e.g., static to dynamic) as understanding evolves.
+2. **Prioritize Automation and Practical Verification:** Automate tasks with appropriate tools (e.g., Docker, scripts). Always verify functionality, especially for web services (e.g., using `curl` for external reachability checks).
+3. **Maintain Clean Code and Clear Structure:** Focus on readable, well-organized code. Refactor as needed. Ensure file structures are logical (e.g., `templates/`, `static/`).
+4. **Leverage AI for Core Tasks, Expect Technical Depth:** Utilize AI for code generation, refactoring, and content creation. Aim for technically sound and analytical outputs, avoiding overly simplistic or casual tones.
+5. **Stay Focused, Communicate Clearly:** Address the current task precisely. Clearly state actions ("I will...") and requests ("Could you..."). Avoid ambiguous phrasing like "Let's".
+6. **Document Key Decisions and State:** Keep track of significant architectural choices and the current project state (e.g., by updating a project journal or long-term memory file).
+7. **Understand Tooling Context:** Be mindful of the development environment (e.g., Docker, Flask, specific file paths) and use tools (e.g., `url_for` in Flask, Docker commands) correctly within that context.

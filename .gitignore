@@ -1,0 +1,12 @@
+# This .gitignore file would normally exclude sensitive files like .env
+
+# For a real project, uncomment the line below:
+#.env
+
+# This is commented out for this proof of concept so everything can be shared easily
+
+__pycache__/
+#*.py[cod]
+#*.class
+#.env.local
+#.env.development.local

@@ -1,0 +1,21 @@
+services:
+  static_site:
+    build: ./services/hello_static_site
+    ports:
+      - "8001:80"
+    volumes:
+      - ./services/hello_static_site:/usr/share/nginx/html:ro
+    restart: unless-stopped
+
+  flask_app:
+    build: ./services/hello_flask_app
+    ports:
+      - "8002:5000"
+    volumes:
+      - ./services/hello_flask_app:/app:delegated
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_RUN_HOST=0.0.0.0
+      # API key from .env file
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    restart: unless-stopped
